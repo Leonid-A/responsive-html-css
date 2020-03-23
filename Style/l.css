@@ -1,3 +1,26 @@
-.desctop-header{
+
+
+.section-title-cont{
+    position: absolute;
+    background-color: red;
+    right:3%;
+    top:-70px;
+}
+
+.section-title{
+    height:30px;
+    padding: 15px 0;
+    border-bottom: none;
+    margin:0
+}
+
+.about-comp-nav{
     display:block;
+    padding:0;
+    font-size:15px;
+    height:auto;
+}
+
+.section-conteiner{
+    width:70%;
 }

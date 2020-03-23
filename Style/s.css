@@ -1,1 +1,49 @@
 
+.slide-head{
+    text-align:left;
+    left:50px;
+    transform:translate(0);
+    width:385px;
+}
+
+.slide-center{
+    text-align:left;
+    left:50px;
+    transform:translate(0);
+    width: 400px;
+}
+
+.slide-bottom-cont{
+    margin-top:10%;
+}
+
+.slide-bottom{
+    text-align:left;
+    left:50px;
+    transform: translate(0);
+}
+
+
+.slide3-bottom{
+    /* left:-100%; */
+    
+}
+
+@keyframes button3{
+    50% {left:-100%; opacity:0}
+    51.8% {left:-100%;}
+    52.5% {opacity:0;}
+    54.15% {opacity:1; left:50px;}
+    75% {opacity:1; left:50px;}
+    100% {left:-100%; opacity:0;}
+}
+
+.section-conteiner{
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.section-nav{
+    width: 50%;
+}
+

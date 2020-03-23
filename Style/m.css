@@ -1,0 +1,23 @@
+.section-nav{
+    display:flex;
+    align-content: space-between;
+
+}
+
+.flex-dir{
+    width:30%;
+
+}
+
+.flex-dir2{
+    width:70%;
+    margin-left:10px;
+}
+
+.animat-name, .animate-text{
+    text-align:left;
+}
+
+.section-title{
+    font-size:24px;
+}

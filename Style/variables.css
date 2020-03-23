@@ -17,13 +17,22 @@
     --gray-dark: #343a40;
     --button:#e1e1e1;
     --active-menu: rgb(39, 58, 163);
+
+
+    --slide-anim-time: 6s;
+    --slides-count: 4;
+    --wwo-anim-time: 5s;
+    --wwo-count:6;
+
+
+
+
+
+
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
     --breakpoint-xxl: 1600px;
-
-    --slide-anim-time: 2s;
-    --slides-count: 4;
 }
