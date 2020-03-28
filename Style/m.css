@@ -1,12 +1,10 @@
 .section-nav{
     display:flex;
     align-content: space-between;
-
 }
 
 .flex-dir{
     width:30%;
-
 }
 
 .flex-dir2{
@@ -21,3 +19,100 @@
 .section-title{
     font-size:24px;
 }
+.slide-head{
+    width:65%;
+}
+
+.slide-head-anim{
+    font-size:34px;
+    width:100%;
+}
+
+.slide-center{
+    width:65%;
+}
+
+.slide-center-anim{
+    font-size:24px;
+    width:100%;
+    margin-top:7%;
+}
+
+.slide-bottom-cont{
+    margin:10% auto 0;
+}
+
+.about-text{
+    padding: 0 20px;
+}
+
+.animat-name{
+    font-size:24px;
+}
+
+.wwo-head{
+    font-size: 34px;
+}
+
+.flex-paral{
+    display:flex;
+    justify-content: space-between;
+    padding:80px 15px;
+}
+
+.paral-info{
+    width:50%;
+    text-align:left;
+    margin:0 15px;
+}
+
+.paral-button-cont{
+    margin: auto auto;
+    width:50%
+}
+
+.paral-text{
+    width:330px;
+}
+
+.paral-head{
+    width:330px;
+    font-size:30px;
+}
+
+.pricing-info{
+    text-align:left;
+    margin-left:20px;
+}
+
+.pricing-section{
+    padding: 90px 0;
+}
+
+.pricing-head{
+    font-size:34px;
+}
+
+.pricing-under-head{
+    font-size:18px;
+}
+
+.pricing-slide-item0{
+    display:none;
+}
+
+.pricing-slide-item{
+    position:relative;
+    animation:none;
+    opacity:1;
+    width:30%;
+}
+
+.pricing-slider-screen{
+    display:flex;
+    margin:15px 0;
+    justify-content: space-between;
+    width:95%;
+}
+
+
