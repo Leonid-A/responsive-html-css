@@ -96,8 +96,12 @@
 
 .paral-info{
     margin:0 auto 20px;
-    width:570px;
-    text-align:center;
+    text-align:left;
+}
+
+.flex-paral{
+    max-width:540px;
+    margin:0 auto;
 }
 
 .psi-top-parag{
@@ -108,16 +112,81 @@
     font-size:14px;
 }
 
+.pricing-slide-item{
+    width:400px;
+}
+
 .whychoose-info{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .whychoose-item{
     flex-basis:44%;
-    padding: 24px 19px 32px 49px;
+    padding: 24px 10px 32px 40px;
     margin-right:15px;
     margin-left:15px;
+    max-width:240px;
+}
+
+.our-clients-cont{
+    margin:0 auto;
+    width:510px;
+}
+
+.clients-img-cont{
+    width:510px;
+}
+
+.clients-logo-cont{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.07);
+    display:flex;
+    flex-wrap:wrap;
+    border-radius:10px;
+    padding: 20px 15px;
+    justify-content: center;
+    position:relative;
+
+}
+
+.clients-logo-cont::before{
+    position: absolute;
+    content: '';
+    top: 45px;
+    bottom: 45px;
+    left: 50%;
+    width: 1px;
+    background: var(--button);
+}
+
+.clients-logo-item{
+    width:230px;
+    border-bottom:none;
+    position:relative;
+}
+
+.row{
+    display:flex;
+    position:relative;
+}
+
+.row::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background: var(--button);
+}
+
+.row::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background: var(--button);
 }

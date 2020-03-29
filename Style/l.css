@@ -167,19 +167,26 @@
 }
 
 .paral-info{
-    width:60%;
+    width:58%;
+    padding-right:15px;
+    margin:0;
 }
 
 .paral-button-cont{
-    width:40%;
+    width:34%;
+    padding-left:15px;
+    margin: auto 0;
 }
 
 .paral-button{
     padding:30px 55px;
+    width:270px;
 }
 
 .flex-paral{
-    padding:90px 15px;
+    max-width:960px;
+    margin: 0 auto;
+    padding: 90px 0;
 }
 
 .pricing-section{
@@ -188,6 +195,10 @@
 
 .pricing-head{
     font-size:40px;
+}
+
+.pricing-slide-item{
+    width:280px;
 }
 
 .psi-top{
@@ -210,4 +221,71 @@
 
 .psi-bottom{
     padding:20px 13px 50px;
+}
+
+.whychoose{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.whychoose-head{
+    font-size:40px;
+}
+
+.whychoose-info{
+    width: 960px;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.whychoose-item{
+    width:25%;
+    max-width:210px;
+}
+
+.our-clients{
+    padding:100px 15px;
+}
+
+.our-clients-cont{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+}
+
+.about-clients-head{
+    font-size: 40px;
+}
+
+.about-clients{
+    width:480px;
+    order: 2;
+    padding-left:15px;
+    margin:0;
+}
+
+.about-clients-name{
+    margin-top:36px;
+}
+
+.clients-img-cont{
+    width:100%;
+}
+
+.clients-logo-cont{
+    width:450px;
+    order:1;
+    padding:30px 15px;
+    margin-right:15px;
+    margin-left:0;
+}
+
+.clients-logo-item{
+    width:210px;
+    padding:30px 15px;
+}
+
+.logo-width{
+    width:180px;
 }

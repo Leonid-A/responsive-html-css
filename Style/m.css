@@ -57,13 +57,14 @@
 .flex-paral{
     display:flex;
     justify-content: space-between;
-    padding:80px 15px;
+    padding: 80px 15px;
+    max-width:720px;
 }
 
 .paral-info{
     width:50%;
     text-align:left;
-    margin:0 15px;
+    margin-bottom:0;
 }
 
 .paral-button-cont{
@@ -105,14 +106,99 @@
     position:relative;
     animation:none;
     opacity:1;
-    width:30%;
+    width: 200px;
+    left:0;
+    transform:translateX(0);
+    min-width:0;
+
+}
+
+.pricing-slide-item2{
+    margin-left:30px;
+    margin-right:30px;
 }
 
 .pricing-slider-screen{
     display:flex;
-    margin:15px 0;
-    justify-content: space-between;
-    width:95%;
+    margin:15px auto;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    padding-left:3%;
+    padding-right:3%;
 }
 
+.whychoose{
+    padding-top:90px;
+    padding-bottom: 60px;
+}
 
+.whychoose-head{
+    font-size:34px;
+}
+
+.whychoose-info{
+    justify-content: start;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whychoose-item{
+    width:33%;
+    max-width:210px;
+}
+
+.our-clients{
+    padding:90px 15px;
+}
+
+.our-clients-cont{
+    width:100%;
+}
+
+.about-clients{
+    width:450px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.about-clients-head{
+    font-size: 34px;
+    text-align:left;
+}
+
+.about-clients-info{
+    font-size: 24px;
+    text-align:left;
+}
+
+.about-clients-name{
+    font-size:24px;
+    text-align:left;
+}
+    
+.about-clients-status{
+    text-align:left;
+}
+
+.clients-img{
+    width:96px;
+}
+
+.clients-logo-cont{
+    width:720px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:25px 30px;
+    
+}
+
+.clients-logo-item{
+    width:50%;
+}
+
+.row{
+    width:100%;
+    justify-content: center;
+}

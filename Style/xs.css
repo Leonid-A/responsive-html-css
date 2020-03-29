@@ -8,6 +8,7 @@ body{
     max-width:1600px;
     margin:0 auto;
     height:100%;
+    min-width:320px;
 }
 
 html{
@@ -35,12 +36,14 @@ html{
     width:144px;
     margin-left:6px;
     margin-top:2px;
+    cursor: pointer;
 }
 
 .menu-cont{
     padding: 1px 6px;
     display:flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .mob-menu-nav{
@@ -123,6 +126,11 @@ transition: left .4s linear;
     display:flex;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.unit:hover{
+    color:var(--active-menu);
 }
 
 .unit-left{
@@ -495,6 +503,7 @@ background:blue;
     left:50%;
     transform: translate(-50%);
     transition: background-color .3s linear, color .3s linear;
+    cursor: pointer;
 }
 
 .slide1-bottom{
@@ -619,10 +628,12 @@ background:blue;
 
 .about-comp{
     display:flex;
+    
 }
 
 .about-text{
     padding: 0 10px;
+    cursor: pointer;
 }
 
 .klor{
@@ -631,6 +642,7 @@ background:blue;
     border-radius:50%;
     background-color: var(--active-menu);
     margin-top:7px;
+    cursor: pointer;
 }
 
 
@@ -718,7 +730,7 @@ background:blue;
 
 .wwo-slide-screen{
     padding: 10px 0;
-    margin:30px auto;
+    margin:30px auto 0;
     position:relative;
     overflow:hidden;
 }
@@ -733,7 +745,8 @@ background:blue;
     animation-duration: calc(var(--wwo-anim-time) * var(--wwo-count));
     overflow:hidden;
     max-width:370px; 
-    margin:5px;
+    margin:5px 5px 20px;
+    cursor: pointer;
 }
 
 .wwo-slide-item0{
@@ -866,7 +879,6 @@ background:blue;
 
 .wwo-color-line{
     display:flex;
-    margin-top:30px;
     justify-content: center;
 }
 
@@ -875,7 +887,7 @@ background:blue;
     width: 30px;
     height: 4px;
     margin: 0 8px;
-    background-color: var(--gray);
+    background-color: var(--button);
     animation-name:cli-anim;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -904,8 +916,8 @@ background:blue;
 @keyframes cli-anim{
     0% {background-color: var(--yellow2)}
     14.5% {background-color: var(--yellow2)}
-    16.7% {background-color: var(--gray)}
-    97.8% {background-color: var(--gray)}
+    16.7% {background-color: var(--button)}
+    97.8% {background-color: var(--button)}
     100% {background-color: var(--yellow2)}
 }
 
@@ -976,6 +988,7 @@ background:blue;
     left:50%;
     transform: translate(-50%);
     transition: background-color .3s linear, color .3s linear;
+    cursor: pointer;
 }
 .paral-button:hover{
     transition: background-color .3s linear, color .3s linear;
@@ -1038,27 +1051,30 @@ background:blue;
     margin:15px auto;
     position:relative;
     overflow:hidden;
+    padding:5px;
 }
 
 .pricing-slide-item{
-    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.08) ;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,.08);;
     position:absolute;
-    overflow:hidden;
-    bottom: 0;
+    margin: 5px 5px 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     animation-name: pricing-slide;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 15s;
     overflow:hidden;
+    min-width: 240px;
     margin:5px;
     opacity: 0;
-    width:100%;
 }
+
 
 .pricing-slide-item0{
     position:relative;
     z-index:-9999;
-    display:hidden;
 }
 
 .pricing-slide-item1{
@@ -1074,12 +1090,12 @@ background:blue;
 }
 
 @keyframes pricing-slide{
-    0% {opacity:1;left:0}
-    28.3% {opacity:1;left:0}
-    33.3% {opacity:0;left:0}
+    0% {opacity:1;left:50%}
+    28.3% {opacity:1;left:50%}
+    33.3% {opacity:0;left:50%}
     33.4% {left:-150%;}
     94.9% {left:-150%;}
-    95% {opacity:0;left:0}
+    95% {opacity:0;left:50%}
     100% {opacity:1;}
 }
 
@@ -1133,7 +1149,7 @@ background:blue;
 }
 
 .psi-bottom-button{
-    margin-top:30px;
+    margin:30px auto 0;
     padding:10px 15px;
     font-size:12px;
     font-weight:900;
@@ -1142,10 +1158,9 @@ background:blue;
     color:var(--blacky);
     background-color:var(--yellow2);
     width:100px;
-    left:50%;
-    transform:translate(-50%);
     position:relative;
     transition: background-color .3s linear, color .3s linear;
+    cursor: pointer;
 }
 
 .psi-bottom-button:hover{
@@ -1165,19 +1180,82 @@ background:blue;
     position:relative;
     letter-spacing: .075em;
     width:116px;
-    left:50%;
-    transform:translate(-50%);
+    margin: 0 auto;
 }
 
 .psi-top-head2{
     margin-top:15px;
 }
 
+
+.kubik{
+    display: inline-block;
+    background-color: var(--button);
+    height:14px;
+    width:14px;
+    margin:0 5px;
+    position:relative;
+    animation-name:kubik-durs;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+.kubik1{
+    animation-delay:0.1s;
+}
+
+.kubik2{
+    animation-delay:5s;
+}
+
+.kubik3{
+    animation-delay:10s;
+}
+
+@keyframes kubik-durs{
+    0% {background-color: var(--active-menu)}
+    28.3% {background-color: var(--active-menu)}
+    33.3% {background-color: var(--button)}
+    95% {background-color: var(--button)}
+    100% {background-color: var(--active-menu)}
+}
+
+.kubik::after{
+    content:"";
+    width:4px;
+    height:4px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    background-color: var(--button);
+    animation-name:kubik-durs;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+.kubik1::after{
+    animation-delay:0;
+}
+
+.kubik2::after{
+    animation-delay:4.9s;
+}
+
+.kubik3::after{
+    animation-delay:9.9s;
+}
+
 .whychoose{
     text-align:center;
     padding:50px 15px 20px;
     background-image:url("../image/bg-icon-2.jpg");
-    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position:relative;
     background-position: 50%;
     z-index:1;
@@ -1222,10 +1300,21 @@ background:blue;
 
 .whychoose-text{
     margin-top:14px;
+}
+
+.forhover{
     font-size: 16px;
     line-height: 1.125;
     font-weight: 500;
     letter-spacing: .1em;
+    transition: color .3s linear;
+    color:var(--white);
+    cursor: pointer;
+}
+
+.forhover:hover{
+    color:var(--yellow2);
+    transition: color .3s linear;
 }
 
 .whychoose-icon{
@@ -1236,4 +1325,164 @@ background:blue;
     font-weight: 400;
     line-height: 36px;
     color: var(--yellow2);
+}
+
+.our-clients{
+    background-color:var(--gray-light);
+    padding:50px 15px;
+    text-align:center;
+}
+
+.about-clients{
+    margin-bottom:60px;
+}
+
+.about-clients-head{
+    font-size: 30px;
+    line-height: 1.22727;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color:var(--blacky);
+}
+
+.about-clients-slide-cont{
+    margin-top:32px;
+    margin-bottom:50px;
+    position:relative;
+}
+
+.about-clients-item{
+    background-color:var(--gray-light);
+    position:absolute;
+    top:0;
+    animation-name:about-clients;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+.about-clients-item0{
+    position: relative;
+    z-index:-9999;
+    /* opacity:0 */
+}
+
+.about-clients-item1{
+    animation-delay:0s;
+}
+
+.about-clients-item2{
+    animation-delay:5s;
+}
+
+.about-clients-item3{
+    animation-delay:10s;
+}
+
+.about-clients-item4{
+    animation-delay:15s;
+}
+
+@keyframes about-clients{
+    0% {opacity:1}
+    20% {opacity: 1;}
+    25% {opacity: 0;}
+    95% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.about-clients-info{
+    font-weight: 300;
+    letter-spacing: .075em;
+    font-style: italic;
+    color: var(--paragraph);
+    font-size: 20px;
+    line-height: 1.25;
+    position:relative;
+}
+
+.about-clients-name{
+    margin-top:36px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    font-size: 20px;
+    line-height: 1.25;
+    color:var(--blacky);
+    position:relative;
+}
+
+
+
+.about-clients-status{
+    margin-top:7px;
+    color: var(--active-menu);
+    letter-spacing: .05em;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    position:relative;
+}
+
+.clients-img-cont{
+    display:flex;
+    flex-wrap: nowrap;
+    margin:0 auto;
+    text-align:center;
+    width:auto;
+}
+
+
+.clients-img{
+    opacity:0.5;
+    width:100%;
+    animation-name:about-clients-img;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+.clients-image1{
+    animation-delay: 0s;
+}
+
+.clients-image2{
+    animation-delay: 5s;
+}
+
+.clients-image3{
+    animation-delay: 10s;
+}
+
+.clients-image4{
+    animation-delay: 15s;
+}
+
+@keyframes about-clients-img{
+    0% {opacity:1}
+    20% {opacity: 1;}
+    25% {opacity: 0.5;}
+    95% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+.clients-img+.clients-img{
+    margin-left:22px;
+    max-width:100%;
+}
+
+.image-style{
+    border-radius:50%;
+    width:100%;
+}
+
+
+.clients-logo-cont{
+    background-color:var(--white);
+}
+
+.clients-logo-item{
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--button);
+    color:var(--paragraph);
+
 }
