@@ -147,7 +147,6 @@
     padding: 20px 15px;
     justify-content: center;
     position:relative;
-
 }
 
 .clients-logo-cont::before{
@@ -189,4 +188,69 @@
     right: 30px;
     height: 1px;
     background: var(--button);
+}
+
+.paral-gcik-cont{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    width:540px;
+}
+
+.paral-gcik-item{
+    width:50%;
+}
+
+.about-us-info{
+    width:540px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.team-img-cont{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-left:auto;
+    margin-right:auto;
+    width:540px;
+}
+
+.team-img-item{
+    animation-name: none;
+    position:relative;
+    width:250px;
+    margin:0 10px 20px;
+    left:0;
+    transform:translate(0);
+}
+
+.team-img-item0{
+    display:none;
+}
+
+.team-img > img{
+    width:100%;
+}
+
+.team-img-item1{
+    order:1;
+}
+
+.team-img-item2{
+    order:2;
+}
+
+.team-img-item3{
+    order:3;
+}
+
+.team-img-item4{
+    order:4;
+}
+
+.team-img-item5{
+    order:5;
 }

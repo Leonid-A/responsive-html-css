@@ -110,7 +110,6 @@
     left:0;
     transform:translateX(0);
     min-width:0;
-
 }
 
 .pricing-slide-item2{
@@ -126,6 +125,11 @@
     align-items: center;
     padding-left:3%;
     padding-right:3%;
+    margin-bottom:0;
+}
+
+.kubik-cont{
+    display:none;
 }
 
 .whychoose{
@@ -191,7 +195,6 @@
     margin-left:auto;
     margin-right:auto;
     padding:25px 30px;
-    
 }
 
 .clients-logo-item{
@@ -201,4 +204,74 @@
 .row{
     width:100%;
     justify-content: center;
+}
+
+.paral-gcik-sect{
+    padding:0;
+}
+
+.paral-back{
+    transform: translate(-50%, 125px);
+}
+
+.paral-gcik-cont{
+    width:720px;
+}
+
+.paral-gcik-item{
+    width:25%;
+    margin-bottom:0;
+    padding:60px 0;
+}
+
+.paral-item-count{
+    font-size:34px;
+}
+
+.paral-item-name{
+    font-size:18px;
+}
+
+.about-us-section{
+    display:flex;
+    flex-wrap:nowrap;
+    width:720px;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: space-between;
+    padding:90px 0;
+}
+
+.about-us-info{
+    width:40%;
+    text-align:left;
+}
+
+.about-button-cont{
+    justify-content:left;
+    margin-left:0;
+}
+
+.about-info-head{
+    font-size:34px;
+}
+
+.about-info-team-name{
+    font-size:18px;
+}
+
+.team-img-cont{
+    width:60%;
+}
+
+.about-slide-button{
+    text-align:center;
+}
+
+.team-img-item{
+    width:45%;
+}
+
+.team-img-cont{
+    margin-top:0;
 }

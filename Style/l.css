@@ -55,6 +55,7 @@
     position:relative;
     overflow:hidden;
     display:flex;
+    border-bottom: 1px solid var(--button);
 }
 
 .tngl-tngl{
@@ -288,4 +289,130 @@
 
 .logo-width{
     width:180px;
+    transition: margin-left .15s linear;
 }
+
+.logo-width:hover{
+    margin-left:-25px;
+    transition: margin-left .15s linear;
+}
+
+.paral-back{
+    transform: translate(-50%, 72px);
+}
+
+.paral-gcik-cont{
+    width:960px;
+}
+
+.paral-gcik-item{
+    padding:83px 0;
+}
+
+.paral-item-count{
+    font-size:40px;
+}
+
+.paral-item-style{
+    transition: bottom .3s linear, transform .3s linear;
+    cursor: pointer;
+}
+
+.paral-gcik-item:hover .paral-item-style{
+    bottom:60px;
+    transform:translateX(-50%) rotate(180deg);
+    transition: bottom .3s linear, transform .3s linear;
+}
+
+.about-us-section{
+    width:960px;
+    padding:100px 0;
+}
+
+.team-img-item{
+    width:30%;
+    margin-left:8px;
+    margin-right:8px;
+    padding:10px;
+    height:270px;
+    overflow:hidden;
+    cursor: pointer;
+    transition: margin-top .3s linear 0.2s, height .3s linear 0.2s;
+}
+
+.about-info-head{
+    font-size:40px;
+}
+
+.about-us-info{
+    width:30%;
+}
+
+.team-img-cont{
+    width:70%;
+}
+
+.about-team-icon-cont{
+    margin-top: 60px;
+    transition: margin-top .3s linear, background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.team-img-item:hover .about-team-icon-cont{
+    margin-top: 0;
+    transition: margin-top .3s linear;
+}
+
+.team-img-item:hover{
+    box-shadow:0 0 5px 0 var(--paragraph);
+    margin-top: -30px;
+    transition: margin-top .3s linear, height .3s linear;
+    height:300px;
+}
+
+.team-info{
+    background-color: transparent;
+}
+
+.team-img-item:hover .about-team-icon-cont:nth-child(2){
+    transition-delay: .066s;
+}
+
+.team-img-item:hover .about-team-icon-cont:nth-child(3){
+    transition-delay: .12s;
+}
+
+.team-img-item:hover .about-team-icon-cont:last-child{
+    transition-delay: .18s;
+}
+
+.team-img-item .about-team-icon-cont:nth-child(2){
+    transition-delay: .066s;
+}
+
+.team-img-item .about-team-icon-cont:nth-child(3){
+    transition-delay: .12s;
+}
+
+.team-img-item .about-team-icon-cont:last-child{
+    transition-delay: .18s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

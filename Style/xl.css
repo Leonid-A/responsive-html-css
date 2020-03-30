@@ -62,10 +62,14 @@
     font-weight: 500;
     letter-spacing: .075em;
     white-space:nowrap;
-    cursor: pointer;
 }
 
-.phone-cont:hover{
+.contacts{
+cursor: pointer;
+}
+
+
+.contacts:hover{
     color:var(--active-menu)
 }
 
@@ -75,11 +79,6 @@
     letter-spacing: .025em;
     margin: 10px 3%;
     white-space:nowrap;
-    cursor: pointer;
-}
-
-.adress-cont:hover{
-    color:var(--active-menu)
 }
 
 .icon-list{
@@ -380,7 +379,6 @@
     padding-left: 50px;
 }
 
-
 .clients-img{
     width:84px;
 }
@@ -412,4 +410,93 @@
 .logo-width{
     width:200px;
 }
+
+.paral-back{
+    transform: translate(-50%, 72px);
+}
+
+.paral-gcik-cont{
+    width:1200px;
+}
+
+.paral-item-count{
+    font-size:44px;
+}
+
+.about-us-section{
+    width:1200px;
+    padding:100px 15px;
+    overflow:hidden;
+}
+
+.about-us-info{
+    width:270px;
+    margin:0;
+}
+
+.about-info-head{
+    font-size:44px;
+}
+
+.team-img-cont{
+    width:900px;
+}
+
+.team-img-item{
+    height:330px;
+}
+
+.team-img-item:hover{
+    height:360px;
+}
+
+.about-contact{
+    position:absolute;
+    width:136px;
+    height:60px;
+    overflow:hidden;
+    left:-78px;
+    color:var(--active-menu);
+    transition: left .15s linear;
+}
+
+.about-button-cont{
+    position:relative;
+    overflow:hidden;
+}
+
+.about-contact::before{
+    font-family: "Font Awesome 5 Free";
+    content:"\f0e0";
+    position:absolute;
+    font-size:26px;
+    padding: 5px 15px 35px 15px;
+    height:26px;
+    width:26px;
+    background-color: var(--white);
+    cursor: pointer;
+    border: 2px solid var(--blacky);
+    top:-2px;
+    left:76px;
+    opacity:1;
+    transition: opacity .01s linear .15s;
+    color:var(--blacky);
+}
+
+.about-anim-posi{
+    display:flex;
+    margin-left:60px;
+}
+
+.about-contact:hover {
+    left:0;
+    background-color:white;
+    transition: left .15s linear;
+}
+
+.about-contact:hover::before{
+    opacity:0;
+    transition: opacity .07s linear;
+}
+
 
