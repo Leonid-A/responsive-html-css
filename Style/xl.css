@@ -490,7 +490,7 @@ cursor: pointer;
 
 .about-contact:hover {
     left:0;
-    background-color:white;
+    background-color:var(--white);
     transition: left .15s linear;
 }
 
@@ -549,4 +549,12 @@ cursor: pointer;
 
 .latest-news-info-cont{
     width:42%;
+}
+
+.foot-flex-style{
+    max-width:1200px;
+}
+
+.privacy-style{
+    padding: 40px 0;
 }

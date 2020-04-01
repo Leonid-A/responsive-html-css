@@ -18,6 +18,7 @@
     --button:#e1e1e1;
     --active-menu: rgb(39, 58, 163);
     --paragraph: #777;
+    --black-trans: rgba(255,255,255,.1);
 
     --slide-anim-time: 6s;
     --slides-count: 4;

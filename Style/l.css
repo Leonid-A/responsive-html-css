@@ -289,12 +289,17 @@
 
 .logo-width{
     width:180px;
+    transition: margin .15s linear;
+}
+
+.logo-width-left:hover{
+    margin-left:-25px;
     transition: margin-left .15s linear;
 }
 
-.logo-width:hover{
-    margin-left:-25px;
-    transition: margin-left .15s linear;
+.logo-width-right:hover{
+    margin-right:-25px;
+    transition: margin-right .15s linear;
 }
 
 .paral-back{
@@ -458,5 +463,51 @@
     width:48%;
 }
 
+.foot-flex-style{
+    max-width:960px;
+}
 
+.about-center-cont{
+    width:32%;
+}
 
+.contact-cont{
+    width:32%;
+}
+
+.map-style{
+    width:32%;
+    padding:15px;
+    margin-bottom:0;
+}
+
+.get-touch{
+    padding-left:40px;
+}
+
+.contact-info{
+    margin-left:40px;
+}
+
+.about-center-list-cont{
+    border-bottom:0px;
+}
+
+.contact-cont{
+    border-bottom:0px;
+    border-right:1px solid var(--black-trans);
+    margin-bottom:0;
+}
+
+.about-center-cont{
+    margin-left:10px;
+    margin-bottom:0;
+}
+
+.foot-flex-style{
+    justify-content: space-between;
+}
+
+.privacy-style{
+    padding: 30px 0 55px;
+}

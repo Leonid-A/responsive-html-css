@@ -858,7 +858,6 @@ background:blue;
     position:relative; 
 }
 
-
 .wwo-slide-info{
     position:relative;
     text-align:left;
@@ -882,7 +881,7 @@ background:blue;
     line-height: 1.6;
     font-weight:400;
     letter-spacing:.075em;
-    color:#777;
+    color:var(--paragraph);
 }
 
 .wwo-color-line{
@@ -1195,7 +1194,6 @@ background:blue;
     margin-top:15px;
 }
 
-
 .kubik{
     display: inline-block;
     background-color: var(--button);
@@ -1469,7 +1467,6 @@ background:blue;
     20% {opacity: 1;}
     25% {opacity: 0.5;}
     95% {opacity: 0.5;}
-    /* 100% {opacity: 1;} */
 }
 
 .clients-img:hover{
@@ -1559,14 +1556,13 @@ background:blue;
     left: 50%;
     width: 53px;
     height: 5px;
-    background: #fedd02;
+    background: var(--yellow2);
     transform: translate(-50%);
 }
 
 .about-us-section{
     padding:50px 15px;
     text-align:center;
-
 }
 
 .about-info-head{
@@ -1629,7 +1625,7 @@ background:blue;
     height: 60px;
     line-height: 56px;
     color: var(--blacky);
-    border: 2px solid #151515;
+    border: 2px solid var(--blacky);
     transition: background-color .2s linear, color .2s linear, border-color .05s linear;
     cursor: pointer;
 }
@@ -1833,6 +1829,14 @@ background:blue;
     font-weight: 900;
     letter-spacing: .2em;
     border-width:0;
+    transition: background-color .3s linear, color .3s linear;
+    cursor: pointer;
+}
+
+.input-button:hover{
+    background-color:var(--yellow2);
+    color:var(--blacky);
+    transition: background-color .3s linear, color .3s linear;
 }
 
 .latest-news-section{
@@ -1918,6 +1922,7 @@ background:blue;
 .latest-news-item{
     padding:10px 0;
     color:var(--white);
+    cursor: pointer;
 }
 
 .latest-news-item+.latest-news-item{
@@ -2007,7 +2012,7 @@ background:blue;
     line-height: 1.33333;
     padding-top: 50px;
     padding-bottom: 25px;
-    border-bottom: 1px solid  rgba(255,255,255,.1);
+    border-bottom: 1px solid var(--black-trans);
 }
 
 .about-center-cont{
@@ -2016,8 +2021,9 @@ background:blue;
 
 .about-center-list-cont{
     padding:30px 0 55px;
-    border-bottom: 1px solid  rgba(255,255,255,.1);
+    border-bottom: 1px solid  var(--black-trans);
 }
+
 .our-center-list{
     list-style-type:none;
     padding:0
@@ -2031,6 +2037,17 @@ background:blue;
     margin-bottom:8px;
 }
 
+.our-cent-list-hov{
+    cursor: pointer;
+    color:var(--white);
+    transition: color .2s linear;
+}
+
+.our-cent-list-hov:hover{
+    color:var(--active-menu);
+    transition: color .2s linear;
+}
+
 .social-icon{
     display:flex;
     list-style-type:none;
@@ -2042,16 +2059,38 @@ background:blue;
 .social-icon-cont{
     height:42px;
     width:42px;
-    background-color:rgba(255,255,255,.1);
+    background-color:var(--black-trans);
     margin:12px 6px 0;
     padding-top:13px;
     text-align:center;
-    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+    z-index:1;
+    position:relative;
+    overflow:hidden;
 }
 
-.social-icon-cont:hover{
-    background-color: var(--active-menu);
-    color:var(--white);
+.social-icon-cont::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: var(--yellow2);
+    transform-origin: 0 0;
+    transform: rotate(45deg) translate3d(-50%,50%,0);
+    transition: all .35s cubic-bezier(.05,.29,.11,1.54);
+    z-index: -1;
+}
+
+.social-icon-cont:hover::after {
+    transform: rotate(45deg) translate3d(-50%,-50%,0);
+}
+
+.social-icon-cont:hover {
+    color:var(--blacky);
+    transition:color .2s linear;
 }
 
 .get-touch{
@@ -2060,7 +2099,7 @@ background:blue;
     line-height: 1.33333;
     font-weight: 300;
     letter-spacing: .2em;
-    border-bottom: 1px solid  rgba(255,255,255,.1);
+    border-bottom: 1px solid var(--black-trans);
 }
 
 .contact-style{
@@ -2070,6 +2109,13 @@ background:blue;
     font-weight: 400;
     margin-left:15px;
     margin-bottom:15px;
+    transition:color .2s linear;
+    cursor: pointer;
+}
+
+.contact-style:hover{
+    color:var(--yellow2);
+    transition:color .2s linear;
 }
 
 .mail-style{
@@ -2079,6 +2125,13 @@ background:blue;
     letter-spacing: .075em;
     margin-left:15px;
     margin-bottom:15px;
+    transition:color .2s linear;
+    cursor: pointer;
+}
+
+.mail-style:hover{
+    color:var(--yellow2);
+    transition:color .2s linear;
 }
 
 .contact-icon-cont{
@@ -2086,7 +2139,7 @@ background:blue;
     width:45px;
     height:45px;
     border-radius:50%;
-    background-color:rgba(255,255,255,.1);
+    background-color:var(--black-trans);
     padding-top:14px;
     text-align:center;
     margin-bottom:15px;
@@ -2099,7 +2152,8 @@ background:blue;
 }
 
 .contact-cont{
-    border-bottom:1px solid  rgba(255,255,255,.1);
+    border-bottom:1px solid  var(--black-trans);
+    margin-bottom:50px;
 }
 
 .contact-info-item{
@@ -2116,4 +2170,58 @@ background:blue;
     font-weight: 900;
     letter-spacing: .2em;
     width: 201px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+.request-button:after {
+    content: "";
+    background: var(--yellow2);
+    display: block;
+    position: absolute;
+    margin: 0;
+    opacity: 1;
+    left:0;
+    padding: 0;
+}
+
+.request-button:hover::after{
+    left:0;
+    opacity: 0;
+    transition: .2s;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120%;
+}
+
+.map-style{
+    margin-bottom:50px;
+    width:100%;
+}
+
+.map-frame{
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+
+.privacy-style{
+    font-size: 15px;
+    letter-spacing: .075em;
+    line-height: 1.6;
+    font-weight: 400;
+    padding:20px 15px;
+    color: rgba(255,255,255,.2);
+}
+
+.privacy-hover{
+    cursor: pointer;
+    transition:color .2s linear;
+}
+
+.privacy-hover:hover{
+    color:var(--yellow2);
+    transition:color .2s linear;
 }
