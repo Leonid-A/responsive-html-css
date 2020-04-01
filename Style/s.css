@@ -254,3 +254,39 @@
 .team-img-item5{
     order:5;
 }
+
+.newsletter-nav{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+
+.newsletter-cont{
+    padding:50px 15px;
+    max-width:460px;
+    margin:0 auto;
+}
+
+.newsletter-cont{
+    max-width:576px;
+}
+
+.newsletter-input-cont{
+    width:60%;
+}
+
+.newsletter-button-cont{
+    width:30%;
+}
+
+.latest-news-section-cont{
+    padding:50px 50px;
+    max-width: 540px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.latest-news-text{
+    margin-top:28px;
+}
+
