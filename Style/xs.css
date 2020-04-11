@@ -23,10 +23,21 @@ html{
 .header-mob{
     position: fixed;
     width: 100%;
-    z-index:10;
+    height:60px;
+    z-index:1;
     background-color: var(--white);
     color: var(--blacky);
     display: flex;
+    z-index:100;
+    
+}
+
+.mob-head-cont{
+    position: absolute;
+    width: 120%;
+    left:-50px;
+    color: var(--blacky);
+    background-color: var(--white);
     padding: 4px;
     box-shadow: rgba(0,0,0,0.1) 0 0 10px 0;
 }
@@ -37,6 +48,7 @@ html{
     margin-left:6px;
     margin-top:2px;
     cursor: pointer;
+    margin-left:100px;
 }
 
 .menu-cont{
@@ -684,7 +696,7 @@ background:blue;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    padding-top:15px;
+    padding-top:16px;
     text-align: center;
     display:inline-block;
 }
@@ -2041,6 +2053,7 @@ background:blue;
     cursor: pointer;
     color:var(--white);
     transition: color .2s linear;
+    text-decoration: none;
 }
 
 .our-cent-list-hov:hover{
@@ -2224,4 +2237,26 @@ background:blue;
 .privacy-hover:hover{
     color:var(--yellow2);
     transition:color .2s linear;
+}
+
+.to-up{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    background-color:var(--yellow2);
+    color:var(--black);
+    font-size:20px;
+    padding:13px 16px;
+    cursor: pointer;
+    z-index:100;
+    transition: color .3s linear, background-color .3s linear;
+}
+
+.to-up:hover{
+    background-color:var(--active-menu);
+    color:var(--white);
+    transition: color .3s linear, background-color .3s linear;
 }
