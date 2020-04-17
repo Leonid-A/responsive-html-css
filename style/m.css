@@ -446,3 +446,8 @@
 .social-icon{
     justify-content: start;
 }
+
+.map-style{
+    width:700px;
+    height:500px;
+}

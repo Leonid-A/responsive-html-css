@@ -558,3 +558,8 @@ cursor: pointer;
 .privacy-style{
     padding: 40px 0;
 }
+
+.map-style{
+    padding-top:50px;
+    height:350px;
+}
